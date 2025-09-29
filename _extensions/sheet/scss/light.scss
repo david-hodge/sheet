@@ -1,0 +1,29 @@
+/*-- scss:defaults --*/
+
+// Loads default light colour theme
+$theme-mode: light;
+
+// This now loads the other four .scss files in the /scss folder.
+@import "colours";
+@import "banner";
+@import "page-info";
+@import "questions";
+
+// If you wish to change sizes of elements on the page, like the Question X text you can do it here.
+
+pre {
+  // Designed to allow code blocks to be focussable, and thus
+  // navigable by a keyboard user
+  tabindex: 0;
+  overflow-x: auto;
+}
+
+@media print {
+  // Reduce margins on top boxes for print version
+  .box {
+    max-width: 100%;
+    margin: 0.625em 0;       // was 10px
+    padding: 0.625em 0.9375em; // was 10px top/bottom, 15px left/right
+    page-break-inside: avoid;
+  }
+}

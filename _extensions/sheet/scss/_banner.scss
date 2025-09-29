@@ -1,0 +1,162 @@
+/*-- scss:defaults --*/
+
+// Colour variables for the top banner
+$banner-bg: $university-blue;
+$tutorial-bg: $leaf; 
+$lab-bg: $pillarbox;
+$bonus-bg: $lavender;
+
+$banner-text-color: #fff;
+$banner-subtitle-color: #fff;
+$banner-right-color: #fff;
+
+$banner-title-font-size: 1.5em;
+$banner-subtitle-font-size: 1.2em;
+$banner-right-side-font-size: 1.2em;
+
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px 8px 9px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  color: $banner-text-color;
+  gap: 15px;
+  border-radius: 5px;
+  background-color: $banner-bg;
+  
+  &.tutorial {
+    background-color: $tutorial-bg;
+  }
+
+  &.lab {
+    background-color: $lab-bg;
+  }
+  
+  &.bonus {
+    background-color: $bonus-bg;
+  }
+  
+  &-logo {
+    flex-shrink: 0;
+
+    img {
+      display: block;
+      max-width: 120px;
+      height: auto;
+      width: auto;
+      max-height: 120px;
+    }
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: $banner-title-font-size;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0;
+      margin-left: -0.05em;
+      color: $banner-text-color;
+    }
+
+    .banner-subtitle { // Sheet subtitle
+      font-size: $banner-subtitle-font-size;
+      color: $banner-subtitle-color;
+    }
+  }
+
+  &-right {
+    margin-left: auto;
+    font-size: $banner-right-side-font-size;
+    color: $banner-right-color;
+    align-self: center;
+  }
+  
+  p {
+    margin: 0;
+    line-height: 1.2;
+  }
+}
+
+/* Mobile view: stack and center everything */
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-logo,
+    &-main,
+    &-right {
+      align-self: center;
+      width: auto;
+    }
+
+    &-main {
+      align-items: center;
+
+      h1,
+      .banner-subtitle {  // subtitle paragraph now included
+        margin-left: 0;
+        text-align: center;
+        display: inline-block; // shrink-to-fit
+      }
+    }
+
+    &-right {
+      margin-left: 0;
+    }
+  }
+}
+
+.box {
+  width: 100%;
+  max-width: 37.5em;
+  margin: 1.25em auto;
+  padding: 0.9375em 1.25em;
+  text-align: left;
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 1.35em;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  &-red {
+    border: 3px solid red;
+  }
+
+  &-red-double {
+    border-style: double;
+    border-color: red;
+    border-width: 6px;
+    padding: 12px 17px;
+  }
+
+  &-blue {
+    border: 3px solid blue;
+  }
+  
+  &-blue-double {
+    border-style: double;
+    border-color: blue;
+    border-width: 6px;
+    padding: 12px 17px;
+  }
+}
+
+/*-- css:defaults --*/

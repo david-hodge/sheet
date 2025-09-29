@@ -1,0 +1,28 @@
+/*-- scss:defaults --*/
+
+.page-info { 
+  // This sets the location of the "Last Updated:" text.
+  position: fixed;
+  padding-right: 1rem;
+  right: 0;
+  bottom: 1rem;
+  color: #444;
+  max-width: 20%;
+}
+
+@media (max-width: 1000px) {
+  .page-info {
+    display: none;
+  }
+}
+
+@media print {
+  // This hides the "Last Updated" text, if present, from the print version.
+  .page-info {
+    display: none;
+  }
+}
+
+
+/*-- css:defaults --*/
+
