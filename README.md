@@ -8,6 +8,8 @@ quarto use template david-hodge/sheet
 
 This will install the extension and create an example qmd file that you can use as a starting place for your article.
 
+The extension can be loaded plain via `quarto add` but you will then need to locate the templates/ to get correct syntax. For first use definitely take the approach above.
+
 ## Using
 
 Three different coloured headers are pre-defined via 'tutorial', 'lab' and 'bonus' sheet types.
