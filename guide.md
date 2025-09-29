@@ -150,5 +150,6 @@ quarto render tutorial.qmd
 The template by default bundles all resources into one large html file. Should you wish the expanded version then set `embed-resources: false` in the header.
 
 - **Single-file Moodle upload:** By default the `embed-resources: true` bundles all CSS, JS, and images.  
-- **TOC PDF link:** If you wish to include on the html page a link to the PDF version then first add `pdf: default` to the YAML header, this creates a PDF link below0 the Table of Contents. Then upload the PDF alongside the HTML as a Moodle multi-file package. Remove `pdf: default` to hide the PDF link.
+
+- **TOC PDF link:** If you wish to include on the html page a link to the PDF version then first add `pdf: default` to the YAML header, this creates a PDF link below the Table of Contents. Then upload the PDF alongside the HTML as a Moodle multi-file package. Remove `pdf: default` to hide the PDF link. *Tip*: `pdf: default` in added at exactly the same indentation level as `sheet-html`
 
