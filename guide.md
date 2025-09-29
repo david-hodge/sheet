@@ -135,7 +135,7 @@ Requires a TeX distribution. Margin captions may not work in pure LaTeX PDFs; HT
 
 - **Both at once** (HTML + LaTeX PDF)
 
-To render both simultaneously, add a ` pdf: default` format to the header and then run:
+To render both simultaneously, add a `pdf: default` format to the header and then run:
 
 ```bash
 quarto render tutorial.qmd
