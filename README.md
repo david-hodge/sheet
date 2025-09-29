@@ -12,15 +12,10 @@ This will install the extension and create an example qmd file that you can use 
 
 Three different coloured headers are pre-defined via 'tutorial', 'lab' and 'bonus' sheet types.
 
-Template files for all three are available in the extension's template folder.
-Or via
+## Guidance
 
-`quarto use template david-hodge/sheet/lab`
-
-## Format Options
-
-*TODO*: If your format has options that can be set via document metadata, describe them.
+There is a separate [guidance document](guide.md).
 
 ## Example
 
-Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+Here is the source code for a sample tutorial sheet: [tutorial.qmd](tutorial.qmd).
