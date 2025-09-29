@@ -135,7 +135,7 @@ Requires a TeX distribution. Margin captions may not work in pure LaTeX PDFs; HT
 
 - **Both at once** (HTML + LaTeX PDF)
 
-To render both simultaneously, add a ```yaml pdf: default``` format to the header and then run:
+To render both simultaneously, add a ` pdf: default` format to the header and then run:
 
 ```bash
 quarto render tutorial.qmd
@@ -147,7 +147,7 @@ quarto render tutorial.qmd
 
 ### 7️⃣ Sharing the Final Sheet
 
-The template by default bundles all resources into one large html file. Should you wish the expanded version then set ```yaml embed-resources: false``` in the header.
+The template by default bundles all resources into one large html file. Should you wish the expanded version then set `embed-resources: false` in the header.
 
 - **Single-file Moodle upload:** By default the `embed-resources: true` bundles all CSS, JS, and images.  
 - **TOC PDF link:** If you wish to include on the html page a link to the PDF version then first add `pdf: default` to the YAML header, this creates a PDF link below0 the Table of Contents. Then upload the PDF alongside the HTML as a Moodle multi-file package. Remove `pdf: default` to hide the PDF link.
