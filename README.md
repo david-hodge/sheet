@@ -1,18 +1,21 @@
-# <%= title %> Format
+# sheet Format
 
 ## Installing
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
-
 ```bash
-quarto use template <github-organization>/<%= filesafename %>
+quarto use template david-hodge/sheet
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your article.
 
 ## Using
 
-*TODO*: Describe how to use your format.
+Three different coloured headers are pre-defined via 'tutorial', 'lab' and 'bonus' sheet types.
+
+Template files for all three are available in the extension's template folder.
+Or via
+
+`quarto use template david-hodge/sheet/lab`
 
 ## Format Options
 
@@ -20,4 +23,4 @@ This will install the extension and create an example qmd file that you can use 
 
 ## Example
 
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
+Here is the source code for a minimal sample document: [template.qmd](template.qmd).
