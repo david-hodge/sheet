@@ -14,4 +14,6 @@ contributes:
       embed-resources: true # Single file output?
       filters:
         - scripts/hr-after-question.lua
+      format-resources:
+        - logo.jpg
 
