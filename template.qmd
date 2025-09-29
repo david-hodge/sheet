@@ -9,7 +9,7 @@ format:
 ```{r}
 #| results: "asis"
 #| echo: false
-source("_extensions/sheet/scripts/_banner_template.R")
+source("_extensions/david-hodge/sheet/scripts/_banner_template.R")
 make_banner( # Edit this function's string values
   type = "tutorial", # Options: lab, tutorial, bonus (see .R file source above)
   logo = TRUE,
